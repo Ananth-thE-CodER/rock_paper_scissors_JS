@@ -2,7 +2,32 @@
 <html lang="en">
     <head>
         <meta charset="utf-8">
-        <script src="js/gameCode.js"></script>
+        <script src="js/gameCode.js" defer></script>
+        <link rel="stylesheet" href="css/rps.css">
         <title>Rock, Paper, Scissors!</title>
     </head>
+    <body>
+        <div class="container">
+            <div class="results-container">
+                <!-- This is where the results of each round is shown. -->
+                <div class="score-board">
+                    <h2>
+                        <span id="player-score">0</span>
+                    </h2>
+                    <h2><span class="score-hyphen">-</span></h2>
+                    <h2>
+                        <span id="comp-score">0</span>
+                    </h2>
+                </div>
+            </div>
+            <div class="buttons-container">
+                <!-- This is where the buttons for selecting the input is shown. -->
+                <div class="buttons-div">
+                    <button data-hand="rock" class="rock-button play-button">Rock</button>
+                    <button data-hand="paper" class="paper-button play-button">Paper</button>
+                    <button data-hand="scissor" class="scissor-button play-button">Scissor</button>
+                </div>
+            </div>
+        </div>
+    </body>
 </html>
